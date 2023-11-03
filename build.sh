@@ -5,12 +5,12 @@ if [ -z "${1:+set}" ]; then
 	exit 1;
 fi;
 
-if ! command -v 7za 2>/dev/null; then
+if ! command -v 7za &>/dev/null; then
 	printf "Could not locate command 7za. Make sure p7zip is installed and try again.\n" 1>&2;
 	exit 1;
 fi;
 
-if ! command -v docker 2>/dev/null; then
+if ! command -v docker &>/dev/null; then
 	printf "Could not locate command docker. Make sure docker.io is installed and try again.\n" 1>&2;
 	exit 1;
 fi;
