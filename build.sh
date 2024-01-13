@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ -z "${1:+set}" ]; then
-	printf "Specify a version as the first argument. eg: ${BASH_SOURCE[0]} 11.314\n" 1>&2;
+	printf "Specify a version as the first argument. eg: ${BASH_SOURCE[0]} 11.315\n" 1>&2;
 	exit 1;
 fi;
 
